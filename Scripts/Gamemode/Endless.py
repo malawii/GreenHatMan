@@ -103,7 +103,7 @@ class gamemode():
         self.Interface=pygame.image.load('Sprites/Menu/UI/Interface.png').convert_alpha()
         
         self.size = (1500,1500)
-        self.x,self.y = 3,3
+        self.x,self.y = 10,10
         
         self.CharacterRect=pygame.Rect(-64,-64,160,160)
         
@@ -142,7 +142,7 @@ class gamemode():
 
     
     def Endless_on(self, fenetre):
-        pygame.key.set_repeat(10)
+        pygame.key.set_repeat(200)
         """Fonction pour afficher le mode de jeu Endless et gérer ses événements
         Args: fenetre (pygame window)
         Returns: str (Etat, changement de scene)

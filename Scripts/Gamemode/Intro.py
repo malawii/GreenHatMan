@@ -2,7 +2,8 @@ import pygame
 from pygame.locals import *
 import random
 
-from Scripts import Endless, UI
+from Scripts import UI
+
 class gamemode():
     def __init__(self,fenetre):
         self.IntroBG=pygame.image.load('Sprites/Menu/UI/Menu.png').convert_alpha()
