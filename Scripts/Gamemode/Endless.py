@@ -149,8 +149,8 @@ class gamemode():
         """
         fenetre.fill((0,0,0,0))
         self.Update(fenetre)
-        self.Camera=pygame.Surface((160,160),pygame.SRCALPHA)
-        sub = self.Game.subsurface(self.CharacterRect)
+        #self.Camera=pygame.Surface((160,160),pygame.SRCALPHA)
+        #sub = self.Game.subsurface(self.CharacterRect)
         
         fenetre.blit(self.Camera,(12,12))
         pygame.display.flip()

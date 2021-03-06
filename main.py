@@ -6,8 +6,14 @@ from pygame.locals import *
 
 from Scripts.Gamemode import Endless, Intro
 from Scripts import Generate,UI,Objet
-        
+
+icon = pygame.image.load('Sprites/Items/diamant.png')
+
 fenetre=pygame.display.set_mode((600,600),pygame.SCALED | pygame.RESIZABLE)#fenêtre de taille 640*480
+icon = icon.convert_alpha()
+icon = pygame.transform.scale(icon,(32,32))
+pygame.display.set_caption("GreenHatMan")
+pygame.display.set_icon(icon)
 etat = "intro"
 boucle= True
 
